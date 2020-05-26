@@ -11,7 +11,7 @@
     <title>Testing anime.js</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -20,7 +20,16 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-
-    <script src="" async defer></script>
+    <div class="demo-wrapper">
+      <p>Text here</p>
+      <div class="square"></div>
+    </div>
+    <script src="/anime.min.js"></script>
+    <script>
+      anime({
+        targets: ".square",
+        translateX: 250,
+      });
+    </script>
   </body>
 </html>
